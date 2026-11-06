@@ -6,6 +6,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', function(){
-    return view('home');
+// Route::get('/home', function(){
+//     return view('home');
+// });
+
+Route::view('/home','home');
+
+Route::get('/about',function(){
+    return View('about');
 });
