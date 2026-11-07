@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 Route::get('/', function () {
     return view('home');
@@ -10,14 +12,16 @@ Route::get('/', function () {
 //     return view('home');
 // });
 
-Route::view('/home','home');
+Route::view('/home', 'home');
 
-Route::get('/about',function(){
+Route::get('/about', function () {
     return View('about');
 });
 
-use App\Http\Controllers\UserController;
-
-Route::get('/user',function(){
+Route::get('/user', function () {
     return view('user');
 });
+
+Route::get('/comment', [Controller::class, 'commentsUser']);
+
+Route::get('/name',[Controller::class,'name']);
