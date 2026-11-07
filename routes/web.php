@@ -15,3 +15,9 @@ Route::view('/home','home');
 Route::get('/about',function(){
     return View('about');
 });
+
+use App\Http\Controllers\UserController;
+
+Route::get('/user',function(){
+    return view('user');
+});
