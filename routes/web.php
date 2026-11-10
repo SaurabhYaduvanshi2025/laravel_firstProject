@@ -27,4 +27,3 @@ Route::get('/comment', [Controller::class, 'commentsUser']);
 Route::get('/name',[Controller::class,'name']);
 
 
-//next stp i will do tommarow 
