@@ -26,4 +26,8 @@ Route::get('/comment', [Controller::class, 'commentsUser']);
 
 Route::get('/name',[Controller::class,'name']);
 
+Route::get('/home', function(){
+    return view ('home');
+});
+
 

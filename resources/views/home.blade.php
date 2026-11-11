@@ -1,1 +1,3 @@
-<h1>This is home page </h1>
+@include('common.header')
+<h1>Home Page</h1>
+<p>Welcome to Home</p>
