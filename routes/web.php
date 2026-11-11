@@ -29,5 +29,8 @@ Route::get('/name',[Controller::class,'name']);
 Route::get('/home', function(){
     return view ('home');
 });
+Route::get('/about',function(){
+    return view('about');
+});
 
 
