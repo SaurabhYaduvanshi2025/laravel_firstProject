@@ -2,4 +2,4 @@
 <h1>Home Page</h1>
 <p>Welcome to Home</p>
 
-@include('common.inner')
+@includeif('common.inner', ['page'=>"This is Home page"])
