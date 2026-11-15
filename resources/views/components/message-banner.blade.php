@@ -1,3 +1,5 @@
 <div>
-    <span class="success">User Login Successfully</span>
+    <span class="{{ $class }}">{{ $msg }}</span>
+    <!-- <span class="success">{{ $msg }}</span> -->
+
 </div>
