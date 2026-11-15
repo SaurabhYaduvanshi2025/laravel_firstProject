@@ -5,7 +5,7 @@
 <x-message-banner msg="User Login Successfully"/>
 <x-message-banner msg="User Signup Successfully"/>
 <br>
-<x-message-banner msg="Password Does Not have " Match class="error"/>
+<x-message-banner msg="Password Does Not have" Match class="error"/>
 
 
 <style>
@@ -19,7 +19,7 @@
     margin: 10px;
   }
   .error{
-        background-color: red;
+    background-color: red;
     color: green;
     padding:3px 10px;
     border-radius: 2px;
