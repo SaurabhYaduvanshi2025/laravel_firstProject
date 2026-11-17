@@ -12,25 +12,5 @@ Route::get('/', function () {
 //     return view('home');
 // });
 
-Route::view('/home', 'home');
-
-Route::get('/about', function () {
-    return View('about');
-});
-
-Route::get('/user', function () {
-    return view('user');
-});
-
-Route::get('/comment', [Controller::class, 'commentsUser']);
-
-Route::get('/name',[Controller::class,'name']);
-
-Route::get('/home', function(){
-    return view ('home');
-});
-Route::get('/about',function(){
-    return view('about');
-});
-
+Route::view('user-form','user-form');
 
