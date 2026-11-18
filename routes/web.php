@@ -1,16 +1,12 @@
 <?php
 
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\View;
+use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
-// Route::get('/home', function(){
-//     return view('home');
-// });
+Route::get('/student-form', [StudentController::class, 'showForm'])->name('student.form');
 
-Route::view('user-form','user-form');
-
+Route::post('/student-form', [StudentController::class, 'handleForm'])->name('student.submit');
