@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Form Practice</title>
-    <!-- Industry Standard: asset() helper direct public/ folder ko point karta hai -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
@@ -12,9 +11,7 @@
 <div class="container">
     <h2>Student Registration</h2>
 
-    <!-- Form Submit Route -->
     <form action="{{ route('student.submit') }}" method="POST">
-        <!-- Security Token (Laravel mein POST form ke liye zaroori hai) -->
         @csrf
 
         <div class="form-group">
