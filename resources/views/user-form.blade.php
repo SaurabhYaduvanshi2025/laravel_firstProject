@@ -50,6 +50,19 @@
             </div>
             @error('skills') <span class="error-text">{{ $message }}</span> @enderror
         </div>
+          <!-- #region -->
+
+
+          <div class="form-group">
+    <label for="comment">Comment</label>
+    <!-- name="comment" hona zaroori hai -->
+    <textarea id="comment" name="comment" rows="3">{{ old('comment') }}</textarea>
+    
+    <!-- Error dikhane ke liye ye line zaroori hai -->
+    @error('comment') 
+        <span class="error-text">{{ $message }}</span> 
+    @enderror
+</div>
 
         <!-- 5. Dropdown (Select) -->
         <div class="form-group">
@@ -76,6 +89,8 @@
             <!-- implode() array ko comma-separated string mein badalta hai -->
             <p><strong>Skills:</strong> {{ implode(', ', $submittedData['skills']) }}</p>
             <p><strong>Course:</strong> {{ $submittedData['course'] }}</p>
+            <P><strong>Comment</strong>{{ $submittedData['comment'] }}</P>
+
         </div>
     @endif
 </div>
